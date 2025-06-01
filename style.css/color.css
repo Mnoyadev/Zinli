@@ -1,0 +1,34 @@
+@import './barra.css';
+@import './barrasup.css';
+@import './main.css';
+@import './tarjeta.css';
+@import './actividad.css';
+@import './headerhisto.css';
+@import './balance.css';
+
+/* Colores */
+
+:root {
+    --violet: #5a38b2;
+    --violet2: #321b82;
+    --violet3: #170b57;
+    --lilac: #a090cb; 
+    --white: #f9f9f9;
+    --white2: #fff;
+    --grey: #535155;
+    --grey2: #393939;
+    --grey3: #202020;
+    --grey4: #f7f7f7;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    background-image: url(../icons/fondo.png);
+    background-color: var(--violet2);
+    font-family: "poppins", sans-serif;
+    /* font-weight: 550;
+    font-style: normal; */
+}
+

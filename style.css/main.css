@@ -1,0 +1,34 @@
+.main-center {
+    display: block;
+    color: var(--white);
+    padding: 0px 26px;
+}
+
+.main-title {
+    font-size: 25px;
+    margin: 0px;
+}
+
+.monto {
+    font-size: 30px;
+    margin: 15px 0px ;
+}
+
+.saldo {
+    display: flex;
+    align-items: center;
+}
+
+.ojos {
+    width: 30px; /* Ajusta el ancho al contenido */
+    height: 30px;
+    padding-left: 10px;
+}
+
+.visible {
+    display: flex;
+}
+
+.oculto {
+    display: none;
+}

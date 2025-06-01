@@ -1,0 +1,31 @@
+.bodyhisto {
+    background: var(--grey4);
+}
+
+.titulohisto {
+  background-color: var(--white2);
+  padding: 25px 26px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+.back-button {
+  text-decoration: none;
+  color: var(--grey3);
+  font-size: 20px;
+}
+
+.saldohis {
+  font-size: 20px;
+  color: var(--grey3);
+  margin: 0;
+}
+
+.spacer {
+  width: 1.5em; /* Ancho similar al botón para mantener el centrado visual */
+  visibility: hidden; /* Lo hacemos invisible para que no se vea */
+}

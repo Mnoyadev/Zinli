@@ -1,0 +1,122 @@
+.contenedor-actividad {
+            background-color: var(--white2); /* Un tono lila claro de fondo */
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            padding: 15px 15px 0px 15px ;
+            width: auto; /* Ajusta el ancho según necesites */
+            margin: 20px auto 0px auto; /* Centrar el contenedor (opcional) */
+        }
+
+        .titulo-actividad {
+            color: #5e35b1; /* Un tono morado oscuro para el título */
+            font-weight: bold;
+            margin-bottom: 10px;
+        } 
+
+        .tabla-scrollable {
+            max-height: 200px; /* Altura máxima para la tabla, habilita el scroll si excede */
+            overflow-y: auto; /* Habilita el scroll vertical cuando sea necesario */
+            width: 100%;
+            border-collapse: collapse; /* Colapsar los bordes de las celdas */
+        }
+
+        .tabla-scrollable th {
+            background-color: #d1c4e9; /* Fondo para los encabezados (opcional) */
+            color: #5e35b1;
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #b39ddb;
+        }
+
+        .tabla-scrollable td {
+            padding: 8px;
+            
+        }
+
+        .tabla-scrollable tr:last-child td {
+            border-bottom: none; /* Eliminar el borde inferior de la última fila */
+        }
+
+        .fila-actividad {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .fila-actividad:last-child {
+            border-bottom: none;
+        }
+
+        .flecha{
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .tarjeta {
+            width: 17px;
+            height: 17px;
+        }
+
+        
+        .icono-actividad {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            color: white;
+            font-size: 0.8em;
+        }
+
+        .detalle-actividad {
+            flex-grow: 1;
+        }
+
+        .detalle-superior {
+            white-space: nowrap;
+            
+            color: #37474f; /* Gris oscuro */
+        }
+
+        .detalle-inferior {
+            color: #757575; /* Gris medio */
+            font-size: 0.9em;
+        }
+
+        .monto-actividad {
+            
+            color: #37474f;
+            margin-left: 15px;
+        }
+
+        .monto-negativo {
+            color: var(--grey3);
+        }
+
+        .monto-positivo {
+            color: var(--grey3);
+        }
+
+        .contenedor-actividad-inferior {
+            background-color: var(--violet3); /* Un tono morado similar */
+            color: white;
+            padding: 15px;
+            /* border-radius: 8px; */
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+       
+            width: auto; /* Ajusta el ancho según necesites */
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 80px;
+        }
+        .contenedor-inferior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }

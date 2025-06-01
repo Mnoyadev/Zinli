@@ -1,0 +1,53 @@
+
+/* Estilos home */
+
+
+
+
+/* Barra navegación*/
+
+.barra-navegacion-inferior {
+    height: 77px;
+    background-color: var(--white); /* Un gris claro de fondo */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-inferior {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.item-menu {
+    text-align: center;
+}
+
+.enlace-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--grey3); /* Un gris oscuro para el texto e iconos */
+    text-decoration: none;
+}
+
+.img-menu {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 6px;
+}
+
+
+.texto-menu {
+    font-size: 12px;
+}
+
+/* Estilo para el ícono activo (opcional) */
+.item-menu a.activo {
+    color: #007bff; /* Un color primario para el ícono activo */
+}

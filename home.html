@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css/color.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wpi8xdd.css">
+
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const divA = document.getElementById('divA');
+  const divB = document.getElementById('divB');
+
+  divA.addEventListener('click', function() {
+    divA.classList.remove('visible');
+    divA.classList.add('oculto');
+    divB.classList.remove('oculto');
+    divB.classList.add('visible');
+  });
+
+  divB.addEventListener('click', function() {
+    divB.classList.remove('visible');
+    divB.classList.add('oculto');
+    divA.classList.remove('oculto');
+    divA.classList.add('visible');
+  });
+});
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="mi-header">
+
+            <div class="logo">Zinli</div>
+
+            <div class="acciones">
+              <div class="icono-cuenta">
+                <img class="cuenta" src="./icons/usuario.png" alt="">
+              </div>
+              <div class="icono-notificacion ">
+                <img class="notificacion" src="./icons/notificacion.png" alt="" >
+              </div>
+            </div>
+
+        </header>
+
+        <main class="main-center">
+            <p class="main-title">Hola Manuel</p>
+            <p>
+                Tu saldo disponible
+            </p>
+            <div id="divA" class="saldo visible" >
+                <p class="monto">
+                    $****
+                </p>
+                <img class="ojos" src="./icons/ojo-cerrado.png" alt="">
+            </div>
+            <div id="divB" class="saldo oculto">
+                <p class="monto">
+                    $11341,68
+                </p>
+                <img class="ojos" src="./icons/ojo.png" alt="">
+            </div>
+            <p>
+                Tu tarjeta Zinli
+            </p>
+
+            <div class="tarjeta-zinli-superior">
+                <div class="fila-superior">
+                    <span class="tipo-tarjeta">VISA</span>
+                    <span class="numero-tarjeta">**** 1481</span>
+                </div>
+               
+            </div>
+            <div class="tarjeta-zinli-inferior">
+                <div class="fila-inferior">
+                    <span class="descripcion-tarjeta">Tarjeta Zinli Visa prepago</span>
+                    <button class="boton-ver-mas">Ver más</button>
+                </div>
+            </div>
+
+            <p>
+                Tus últimos movimientos
+            </p>
+            
+            <div class="contenedor-actividad">
+                <div class="tabla-scrollable">
+                    <table>
+                        <tbody>
+                            <tr class="fila-actividad">
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/tarjeta-de-credito.png" alt="" class="tarjeta">
+                                    </div>
+                                </td>
+                                <td class="detalle-actividad">
+                                    <div class="detalle-superior">Cuota Mensual </div>
+                                    <div class="detalle-inferior">Pagaste</div>
+                                </td>
+                                <td class="monto-actividad monto-negativo">-$0.99</td>
+                            </tr>
+                            <tr class="fila-actividad">
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="detalle-actividad">
+                                    <div class="detalle-superior">Tarjeta Física Zinli</div>
+                                    <div class="detalle-inferior">Compraste</div>
+                                </td>
+                                <td class="monto-actividad monto-negativo">-$6.25</td>
+                            </tr>
+                            <tr class="fila-actividad">
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td class="detalle-actividad">
+                                    <div class="detalle-superior">Esteysi Dalgira Gracia</div>
+                                    <div class="detalle-inferior">Recibiste</div>
+                                </td>
+                                <td class="monto-actividad monto-positivo">$26.00</td>
+                            </tr>
+                            <tr class="fila-actividad">
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flechasup.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td class="detalle-actividad">
+                                    <div class="detalle-superior">Otro movimiento</div>
+                                    <div class="detalle-inferior">Pagaste</div>
+                                </td>
+                                <td class="monto-actividad monto-negativo">-$12.50</td>
+                            </tr>
+                            <tr class="fila-actividad">
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td class="detalle-actividad">
+                                    <div class="detalle-superior">Transferencia recibida</div>
+                                    <div class="detalle-inferior">Recibiste</div>
+                                </td>
+                                <td class="monto-actividad monto-positivo">$50.00</td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="contenedor-actividad-inferior">
+                <div class="contenedor-inferior">
+                    <span class="descripcion-tarjeta">Actividad reciente</span>
+                    <button class="boton-ver-mas">Ver más</button>
+                </div>
+            </div>
+
+        </main>
+
+        <nav class="barra-navegacion-inferior">
+            <ul class="menu-inferior">
+                <li class="item-menu">
+                    <a href="#" class="enlace-menu">
+                        <!-- <i class="fas fa-upload icono-menu"></i> -->
+                        <img class="img-menu" src="./icons/recargar.png" alt="">
+                        
+                        <span class="texto-menu">Recargas</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#" class="enlace-menu">
+                        <i class="fas fa-paper-plane icono-menu"></i>
+                        <img class="img-menu" src="./icons/enviar.png" alt="">
+
+                        <span class="texto-menu">Enviar</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#" class="enlace-menu">
+                        <i class="fas fa-file-invoice-dollar icono-menu"></i>
+                        <img class="img-menu" src="./icons/pagar.png" alt="">
+
+                        <span class="texto-menu">Pagar</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#" class="enlace-menu">
+                        <i class="fas fa-qrcode icono-menu"></i>
+                        <img class="img-menu" src="./icons/qr.png" alt="">
+
+                        <span class="texto-menu">QR</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

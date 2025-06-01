@@ -1,0 +1,72 @@
+ .tarjeta-zinli-superior {
+            background-color: var(--violet); /* Un tono morado similar */
+            background-image: url(../icons/tarjeta-sup.png);
+            color: white;
+            padding: 15px;
+            /* border-radius: 8px; */
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: auto; /* Ajusta el ancho según necesites */
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fila-superior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 5px 12px 5px;            
+        }
+
+        .tipo-tarjeta {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .numero-tarjeta {
+            font-size: 20px;
+            
+        }
+
+        /* Parte inferior */
+
+        .tarjeta-zinli-inferior {
+            background-color: var(--violet3); /* Un tono morado similar */
+            color: white;
+            padding: 15px;
+            /* border-radius: 8px; */
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+       
+            width: auto; /* Ajusta el ancho según necesites */
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        .fila-inferior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+        }
+
+        .descripcion-tarjeta {
+            font-size: 16px;
+        }
+
+        .boton-ver-mas {
+            background-color: #512da8; /* Un tono morado más oscuro para el botón */
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .boton-ver-mas:hover {
+            background-color: #4527a0; /* Un tono aún más oscuro al pasar el ratón */
+        }

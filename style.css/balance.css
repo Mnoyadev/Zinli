@@ -1,0 +1,114 @@
+
+.balances-container {
+  background-color: var(--white2); /* Fondo gris claro */
+  padding: 26px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+  font-family: sans-serif;
+}
+
+.balances-title {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.balance-card {
+  background-color: var(--grey4);
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.balance-card.total-balance {
+  flex-direction: row;
+}
+
+.balance-card.available-balance,
+.balance-card.pending-balance {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: calc(50% - 5px); /* Dos tarjetas lado a lado con un pequeño espacio */
+}
+
+.balances-summary {
+  display: flex;
+  gap: 10px;
+}
+
+.donut-chart {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donut-chart.small {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.donut-segment {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  clip: rect(0, 1em, 1em, 0.5em); /* Recorta la mitad */
+}
+
+.donut-segment.purple {
+  background-color: #9c27b0; /* Morado */
+}
+
+.donut-segment.yellow {
+  background-color: #ffeb3b; /* Amarillo */
+  transform: rotate(180deg); /* Rota la segunda mitad */
+}
+
+.donut-segment.half {
+  clip: rect(0, 1em, 1em, 0); /* Muestra solo la mitad */
+}
+
+.donut-hole {
+  width: 60%;
+  height: 60%;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.balance-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-info.small {
+  align-items: flex-start;
+}
+
+.balance-label {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.balance-amount {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+.balance-description {
+  font-size: 0.8em;
+  color: #555;
+}
