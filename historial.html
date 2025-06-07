@@ -11,7 +11,7 @@
     
     <header class="titulohisto">
         <div class="container">
-            <a href="#" class="back-button">&lt;</a>
+            <a href="./home.html" class="back-button">&lt;</a>
             <p class="saldohis">Saldos y movimientos</p>
             <div class="spacer"><p></p></div> 
         </div>
@@ -21,13 +21,13 @@
             <h2 class="balances-title">Saldos</h2>
             <div class="balance-card total-balance">
                 <div class="donut-chart">
-                <div class="donut-segment purple"></div>
-                <div class="donut-segment yellow"></div>
+                    <div class="donut-segment purple"></div>
+                    <div class="donut-hole"></div>
                 </div>
                 <div class="balance-info">
-                <p class="balance-label">Total</p>
-                <p class="balance-amount">$11380.76</p>
-                <p class="balance-description">Saldo disponible + saldo pendiente</p>
+                    <p class="balance-label">Total</p>
+                    <p class="balance-amount">$11341.68</p>
+                    <p class="balance-description">Saldo disponible + saldo pendiente</p>
                 </div>
             </div>
             <div class="balances-summary">
@@ -38,23 +38,1019 @@
                 </div>
                 <div class="balance-info small">
                     <p class="balance-label">Disponible</p>
-                    <p class="balance-amount">$11380.76</p>
+                    <p class="balance-amount">$11341.68</p>
                 </div>
                 </div>
                 <div class="balance-card pending-balance">
                 <div class="donut-chart small">
-                    <div class="donut-segment yellow half"></div>
+                    <div class="donut-segment grey half"></div> 
                     <div class="donut-hole"></div>
                 </div>
                 <div class="balance-info small">
                     <p class="balance-label">Pendiente</p>
-                    <p class="balance-amount">$6.13</p>
+                    <p class="balance-amount">$0.00</p>
                 </div>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="left-section">
+                <h2 class="movimientos">Movimientos</h2>
+            </div>
+            <div class="right-section">
+                <button id="openModalBtn" class="icon-button">
+
+                    <img class="filtro" src="./icons/filtrar.png" alt="">
+                    
+                </button>
+                
+            </div>
+        </div>
+            <div class="contenedor-actividad-balance">
+                <div class="tabla-scrollable-balance">
+                    
+                    <!-- ------------------------------- -->
+                    <table class="transaction-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>02 Jun, 2025</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$150.30</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>28 May, 2025</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$150.75</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>20 May, 2025</td>
+                                <td>Depósito</td>
+                                <td class="amount positive">$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>15 May, 2025</td>
+                                <td>Pago Streaming</td>
+                                <td class="amount negative">-$15.99</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>05 May, 2025</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Abr, 2025</td>
+                                <td>Retiro ATM</td>
+                                <td class="amount negative">-$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>18 Abr, 2025</td>
+                                <td>Transferencia Recibida</td>
+                                <td class="amount positive">$250.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>10 Abr, 2025</td>
+                                <td>Factura Teléfono</td>
+                                <td class="amount negative">-$45.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Abr, 2025</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Mar, 2025</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$200.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>18 Mar, 2025</td>
+                                <td>Reembolso</td>
+                                <td class="amount positive">$50.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>10 Mar, 2025</td>
+                                <td>Cuota Gimnasio</td>
+                                <td class="amount negative">-$40.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Mar, 2025</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>20 Feb, 2025</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$80.50</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>15 Feb, 2025</td>
+                                <td>Intereses Ganados</td>
+                                <td class="amount positive">$5.20</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>05 Feb, 2025</td>
+                                <td>Retiro ATM</td>
+                                <td class="amount negative">-$150.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Feb, 2025</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Ene, 2025</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$75.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>18 Ene, 2025</td>
+                                <td>Transferencia Recibida</td>
+                                <td class="amount positive">$500.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>10 Ene, 2025</td>
+                                <td>Pago Utilidades</td>
+                                <td class="amount negative">-$250.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>05 Ene, 2025</td>
+                                <td>Depósito</td>
+                                <td class="amount positive">$120.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>20 Dic, 2024</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$300.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>10 Dic, 2024</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>01 Dic, 2024</td>
+                                <td>Pago Alquiler</td>
+                                <td class="amount negative">-$900.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>25 Nov, 2024</td>
+                                <td>Reembolso</td>
+                                <td class="amount positive">$80.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>15 Nov, 2024</td>
+                                <td>Retiro ATM</td>
+                                <td class="amount negative">-$200.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>05 Nov, 2024</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>28 Oct, 2024</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$850.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>18 Oct, 2024</td>
+                                <td>Transferencia Recibida</td>
+                                <td class="amount positive">$150.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>10 Oct, 2024</td>
+                                <td>Factura Agua</td>
+                                <td class="amount negative">-$30.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Oct, 2024</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Sep, 2024</td>
+                                <td>Pago Tarjeta Crédito</td>
+                                <td class="amount negative">-$1,500.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>15 Sep, 2024</td>
+                                <td>Transferencia Recibida</td>
+                                <td class="amount positive">$700.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>05 Sep, 2024</td>
+                                <td>Cuota Préstamo Personal</td>
+                                <td class="amount negative">-$400.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Sep, 2024</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>20 Ago, 2024</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$120.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>10 Ago, 2024</td>
+                                <td>Intereses Ganados</td>
+                                <td class="amount positive">$4.80</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Ago, 2024</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Jul, 2024</td>
+                                <td>Retiro ATM</td>
+                                <td class="amount negative">-$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>15 Jul, 2024</td>
+                                <td>Reembolso</td>
+                                <td class="amount positive">$300.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>05 Jul, 2024</td>
+                                <td>Servicio de Internet</td>
+                                <td class="amount negative">-$50.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Jul, 2024</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Jun, 2024</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$250.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>15 Jun, 2024</td>
+                                <td>Pago Seguro Auto</td>
+                                <td class="amount negative">-$280.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>05 Jun, 2024</td>
+                                <td>Depósito</td>
+                                <td class="amount positive">$500.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Jun, 2024</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>20 Dic, 2023</td>
+                                <td>Retiro ATM</td>
+                                <td class="amount negative">-$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>10 Dic, 2023</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>01 Dic, 2023</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$1,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>25 Nov, 2023</td>
+                                <td>Transferencia Recibida</td>
+                                <td class="amount positive">$200.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>15 Nov, 2023</td>
+                                <td>Pago de Viaje</td>
+                                <td class="amount negative">-$2,500.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>05 Nov, 2023</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>28 Oct, 2023</td>
+                                <td>Retiro ATM</td>
+                                <td class="amount negative">-$150.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>18 Oct, 2023</td>
+                                <td>Transferencia Recibida</td>
+                                <td class="amount positive">$400.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>10 Oct, 2023</td>
+                                <td>Factura Luz</td>
+                                <td class="amount negative">-$70.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Oct, 2023</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Sep, 2023</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$300.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>15 Sep, 2023</td>
+                                <td>Intereses Ganados</td>
+                                <td class="amount positive">$4.50</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>05 Sep, 2023</td>
+                                <td>Pago de Alquiler</td>
+                                <td class="amount negative">-$900.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Sep, 2023</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>20 Ago, 2023</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$95.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>10 Ago, 2023</td>
+                                <td>Retiro ATM</td>
+                                <td class="amount negative">-$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Ago, 2023</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Jul, 2023</td>
+                                <td>Pago Telefonía</td>
+                                <td class="amount negative">-$55.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>15 Jul, 2023</td>
+                                <td>Reembolso</td>
+                                <td class="amount positive">$75.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>05 Jul, 2023</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$180.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Jul, 2023</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class=" ">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Jun, 2023</td>
+                                <td>Reparación Coche</td>
+                                <td class="amount negative">-$700.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>15 Jun, 2023</td>
+                                <td>Depósito</td>
+                                <td class="amount positive">$300.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>05 Jun, 2023</td>
+                                <td>Retiro ATM</td>
+                                <td class="amount negative">-$150.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Jun, 2023</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>20 Dic, 2022</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$600.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>10 Dic, 2022</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>01 Dic, 2022</td>
+                                <td>Pago Hipoteca</td>
+                                <td class="amount negative">-$2,000.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>25 Nov, 2022</td>
+                                <td>Transferencia Recibida</td>
+                                <td class="amount positive">$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>15 Nov, 2022</td>
+                                <td>Retiro ATM</td>
+                                <td class="amount negative">-$200.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>05 Nov, 2022</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>28 Oct, 2022</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$90.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>18 Oct, 2022</td>
+                                <td>Reembolso</td>
+                                <td class="amount positive">$20.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>10 Oct, 2022</td>
+                                <td>Factura Electricidad</td>
+                                <td class="amount negative">-$65.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Oct, 2022</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Sep, 2022</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$120.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>15 Sep, 2022</td>
+                                <td>Intereses Ganados</td>
+                                <td class="amount positive">$3.80</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>05 Sep, 2022</td>
+                                <td>Retiro ATM</td>
+                                <td class="amount negative">-$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Sep, 2022</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class=" ">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>20 Ago, 2022</td>
+                                <td>Pago Online</td>
+                                <td class="amount negative">-$50.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>10 Ago, 2022</td>
+                                <td>Transferencia Recibida</td>
+                                <td class="amount positive">$30.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Ago, 2022</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Jul, 2022</td>
+                                <td>Retiro ATM</td>
+                                <td class="amount negative">-$80.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>15 Jul, 2022</td>
+                                <td>Reembolso</td>
+                                <td class="amount positive">$40.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>05 Jul, 2022</td>
+                                <td>Pago Punto de Venta</td>
+                                <td class="amount negative">-$25.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>01 Jul, 2022</td>
+                                <td>Depósito Salario</td>
+                                <td class="amount positive">$2,800.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img class="flecha" src="./icons/flechasup.png" alt="">
+                                    </div>
+                                </td>
+                                <td>25 Jun, 2022</td>
+                                <td>Pago Servicio Streaming</td>
+                                <td class="amount negative">-$12.99</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>15 Jun, 2022</td>
+                                <td>Transferencia Recibida</td>
+                                <td class="amount positive">$150.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="">
+                                        <img src="./icons/flecha.png" alt="" class="flecha">
+                                    </div>
+                                </td>
+                                <td>05 Jun, 2022</td>
+                                <td>Depósito Inicial</td>
+                                <td class="amount positive">$2,500.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
     </main>
-    
+    <!-- <div id="filterModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon-filter-header">
+                    <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
+                </svg>
+                <h2>Filtrar movimientos</h2>
+                <span class="close-button" id="closeModalBtn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <button class="filter-option">Últimas 24h</button>
+                <button class="filter-option">15 días</button>
+                <button class="filter-option">30 días</button>
+                <button class="filter-option">90 días</button>
+                <button class="filter-option">Antiguos</button>
+                <button class="filter-option">Pendientes</button>
+            </div>
+        </div>
+    </div> -->
+ 
 
 </body>
 </html>

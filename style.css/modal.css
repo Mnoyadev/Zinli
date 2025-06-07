@@ -1,0 +1,238 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; /* Fondo general de la página */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido principal */
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la vista */
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos de los botones del encabezado (filtro y descarga) */
+.header-buttons {
+    width: 100%;
+    max-width: 375px; /* Ancho similar al de un móvil */
+    display: flex;
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+    gap: 10px; /* Espacio entre los botones */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Incluye padding y border en el width */
+}
+
+.icon-button {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Más redondeado */
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    padding: 0; /* Elimina padding por defecto del botón */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.icon-button:hover {
+    background-color: #f9f9f9;
+    border-color: #ccc;
+}
+
+.icon-filter, .icon-download, .icon-card {
+    width: 24px; /* Tamaño del ícono */
+    height: 24px;
+    color: #555; /* Color del ícono */
+}
+
+/* Estilos del contenido principal (Movimientos) */
+.main-content {
+    width: 100%;
+    max-width: 375px; /* Ancho similar al de un móvil */
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 20px; /* Espacio debajo del contenido principal */
+    box-sizing: border-box;
+}
+
+.main-content h1 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-icon {
+    background-color: #e0f2f7; /* Color de fondo del ícono */
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transaction-icon .icon-card {
+    color: #2196F3; /* Color del ícono de la tarjeta */
+}
+
+.transaction-item p {
+    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.transaction-item .amount {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* --- Estilos del Modal (ventana flotante) --- */
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1000; /* Asegura que esté encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Cubre todo el ancho */
+    height: 100%; /* Cubre toda la altura */
+    overflow: auto; /* Permite scroll si el contenido es muy grande */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente oscuro */
+    /* Alineación del contenido del modal en la parte inferior */
+    display: flex;
+    align-items: flex-end; /* Alinea el contenido a la parte inferior */
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 400px; /* Ancho máximo para pantallas más grandes */
+    border-top-left-radius: 20px; /* Bordes superiores redondeados */
+    border-top-right-radius: 20px;
+    padding: 20px;
+    animation: slideUp 0.3s forwards; /* Animación de entrada */
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.1); /* Sombra superior */
+}
+
+/* Animación para que el modal suba desde abajo */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Estilos del encabezado del modal */
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 10px; /* Espacio para el borde inferior si se añade */
+    /* border-bottom: 1px solid #eee; /* Opcional: línea divisoria */
+}
+
+.modal-header h2 {
+    font-size: 20px;
+    margin: 0;
+    flex-grow: 1; /* Permite que el título ocupe el espacio */
+    text-align: center; /* Centra el texto "Filtrar movimientos" */
+    position: relative; /* Para mover el icono de filtro */
+    left: -10px; /* Ajusta la posición para que el texto se vea centrado con el icono */
+}
+
+.modal-header .icon-filter-header {
+    width: 24px;
+    height: 24px;
+    color: #555;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Botón de cerrar (la 'x') */
+.close-button {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px; /* Para hacer el área de clic más grande */
+    line-height: 1; /* Ajusta la altura de línea */
+    margin-left: auto; /* Empuja el botón de cerrar a la derecha */
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estilos del cuerpo del modal (botones de filtro) */
+.modal-body {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan a la siguiente línea */
+    gap: 10px; /* Espacio entre los botones de filtro */
+    justify-content: center; /* Centra los botones horizontalmente */
+}
+
+.filter-option {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Más redondeado para parecer una pastilla */
+    padding: 10px 18px;
+    font-size: 15px;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+    outline: none; /* Elimina el contorno al hacer focus */
+}
+
+.filter-option:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+/* Estilo para un botón de filtro seleccionado (opcional, si quieres que uno se vea activo) */
+.filter-option.active {
+    background-color: #e0f2f7; /* Color de fondo azul claro */
+    border-color: #2196F3; /* Borde azul */
+    color: #2196F3; /* Texto azul */
+    font-weight: bold;
+}
+
+/* Clase para ocultar el modal */
+.modal.hidden {
+    display: none;
+}
+
+/* Clase para mostrar el modal (se usa para anular display:none) */
+.modal.visible {
+    display: flex; /* Usamos flex para centrar contenido */
+}

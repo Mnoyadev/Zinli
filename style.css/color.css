@@ -5,6 +5,7 @@
 @import './actividad.css';
 @import './headerhisto.css';
 @import './balance.css';
+@import './modal.css';
 
 /* Colores */
 
@@ -16,6 +17,7 @@
     --white: #f9f9f9;
     --white2: #fff;
     --grey: #535155;
+    --grey1: #939194;
     --grey2: #393939;
     --grey3: #202020;
     --grey4: #f7f7f7;

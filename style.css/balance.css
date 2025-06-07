@@ -61,21 +61,19 @@
   height: 100%;
   border-radius: 50%;
   position: absolute;
-  clip: rect(0, 1em, 1em, 0.5em); /* Recorta la mitad */
 }
 
 .donut-segment.purple {
-  background-color: #9c27b0; /* Morado */
+  background-color: #a987e8; /* Morado */
 }
 
-.donut-segment.yellow {
-  background-color: #ffeb3b; /* Amarillo */
-  transform: rotate(180deg); /* Rota la segunda mitad */
+.donut-segment.grey {
+  background-color: var(--grey1); /* Amarillo */
 }
 
-.donut-segment.half {
-  clip: rect(0, 1em, 1em, 0); /* Muestra solo la mitad */
-}
+/* .donut-segment.half {
+  clip: rect(0, 1em, 1em, 0); /* Muestra solo la mitad 
+} */
 
 .donut-hole {
   width: 60%;
@@ -112,3 +110,76 @@
   font-size: 0.8em;
   color: #555;
 }
+
+/* -------------------------------- */
+
+.container {
+ display: flex;
+ align-items: center;
+ padding: 0 26px; /* Ajusta el padding según sea necesario */
+ background-color: #fff; /* Fondo blanco como en la imagen */
+ /*border: 1px solid #ccc; /* Opcional: si quieres un borde */
+}
+
+.left-section {
+ flex-grow: 1;
+}
+
+.movimientos {
+ font-size: 20px; /* Ajusta el tamaño de la fuente */
+ color: #333; /* Color del texto */
+}
+
+.right-section {
+ display: flex;
+ gap: 10px; /* Espacio entre los botones */
+}
+
+.icon-button {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 36px; /* Ajusta el tamaño del botón */
+ height: 36px; /* Ajusta el tamaño del botón */
+ border: 1px solid #9886eb; /* Color del borde morado */
+ border-radius: 8px; /* Bordes redondeados */
+ background-color: transparent;
+ cursor: pointer;
+}
+
+.icon-button svg {
+ width: 20px; /* Ajusta el tamaño del icono */
+ height: 20px; /* Ajusta el tamaño del icono */
+ stroke: #9886eb; /* Color del icono morado */
+}
+
+.icon-button:hover {
+ background-color: #f2f0fc; /* Un ligero fondo al pasar el ratón (opcional) */
+}
+
+.filtro{
+  width: 20px;
+ height: 20px;
+}
+
+.contenedor-actividad-balance{
+  background-color: var(--white2); /* Un tono lila claro de fondo */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 0px 15px ;
+  width: auto; /* Ajusta el ancho según necesites */
+}
+
+.tabla-scrollable-balance{
+  max-height: 350px; /* Altura máxima para la tabla, habilita el scroll si excede */
+  overflow-y: auto; /* Habilita el scroll vertical cuando sea necesario */
+  width: 100%;
+  border-collapse: collapse; /* Colapsar los bordes de las celdas */
+}
+
+
+
+.tabla-scrollable-balance td {
+            padding: 8px;
+            
+        }
